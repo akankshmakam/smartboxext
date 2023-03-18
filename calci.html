@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="popup.css" />
+  <title>MathEX</title>
+  <style>
+    .home {
+      animation: fadeIn 0.5s ease;
+      animation-fill-mode: both;
+      animation-delay: 0s;
+      background-color: #111;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 16px;
+      text-align: center;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+    .home a{
+      text-decoration: none;
+      color: #fff;
+    }
+    .home a:hover{
+      color: #ffd700;
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="logo">
+    </div>
+
+    <div class="myCalculator">
+      <div class="calcContainer">
+
+        <div class="calcScreen">
+          <p id="calcScreenTextOperation">0</p>
+          <p id="calcScreenTextResult">0</p>
+        </div>
+        <div class="calcBtns">
+
+          <div class="calcbtn" id="btnDel">DEL</div>
+          <div class="calcbtn" id="btnAc">AC</div>
+          <div class="calcbtn1" id="btnAns">Previous ANS</div>
+
+          <div class="calcbtn" id="btn9">9</div>
+          <div class="calcbtn" id="btn8">8</div>
+          <div class="calcbtn" id="btn7">7</div>
+          <div class="calcbtn" id="btnPls">+</div>
+          <div class="calcbtn" id="btn6">6</div>
+          <div class="calcbtn" id="btn5">5</div>
+          <div class="calcbtn" id="btn4">4</div>
+          <div class="calcbtn" id="btnMins">-</div>
+          <div class="calcbtn" id="btn1">1</div>
+          <div class="calcbtn" id="btn2">2</div>
+          <div class="calcbtn" id="btn3">3</div>
+          <div class="calcbtn" id="btnMul">*</div>
+          <div class="calcbtn" id="btn0">0</div>
+          <div class="calcbtn" id="btnDot">.</div>
+          <div class="calcbtn" id="btnDiv">/</div>
+          <div class="calcbtn" id="btnPrenR">(</div>
+          <div class="calcbtn" id="btnPrenL">)</div>
+          <div class="calcbtn" id="btnReminder">%</div>
+          <div class="calcbtn" id="btnEqul">=</div>
+
+
+
+
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+  <br><br>
+  <button class="home"><a href="popup.html"><- Home Page</a></button>
+  <script src="popup.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const copyUrlButton = document.getElementById('copy-url-button');
+      
+      copyUrlButton.addEventListener('click', function() {
+        chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+          const url = tabs[0].url;
+          navigator.clipboard.writeText(url);
+          alert(`Webpage URL: ${url} \nCopied to clipboard!`);
+        });
+      });
+    });
+    
+  </script>
+</body>
+
+</html>

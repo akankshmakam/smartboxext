@@ -1,0 +1,30 @@
+{
+  "name": "SmartBox",
+  "description": "SmartBox for smmart people",
+  "version": "1.1.4",
+  "manifest_version": 3,
+  "icons": {
+    "16": "sai (1).png",
+    "32": "ds32.png",
+    "48": "ds48.png",
+    "128": "ds128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "sai (1).png",
+      "32": "ds32.png",
+      "48": "ds48.png",
+      "128": "ds128.png"
+    }
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://www.google.com/*"
+  ]
+}

@@ -1,0 +1,126 @@
+body {
+    
+    box-sizing: border-box;
+    font-family: roboto;
+    background-color: #FBFBFB;
+    color: white;
+}
+
+
+.logo img {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.logo h3 {
+    display: inline-block;
+    font-weight: 300;
+    font-size: x-large;
+    margin-bottom: 5px;
+    margin-top: 0%;
+}
+
+
+.myCalculator {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(39, 38, 38);
+    border-radius: .8rem;
+    padding: 1.5rem 1rem;
+    width: 15rem;
+    height:auto ;
+    justify-self: right;
+    box-shadow: 0px 7px 20px 10px rgba(7, 3, 48, .08);
+}
+
+
+
+.myCalculator .calcContainer {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.myCalculator .calcContainer .calcScreen {
+    /* border: 1px solid red; */
+    height: 5rem;
+
+    overflow-wrap: break-word;
+
+    background-color: darkgray;
+    border-radius: .3rem;
+    padding: 0 .2rem 0 .2rem;
+    box-shadow: 0px 7px 20px 10px rgba(7, 3, 48, .08);
+
+}
+
+.myCalculator .calcContainer .calcScreen p {
+    margin: 0;
+}
+
+#calcScreenTextOperation {
+    margin-top: .8rem;
+    font-weight: bold;
+    color: black;
+    padding: 0 .2rem 0 .2rem;
+}
+
+#calcScreenTextResult {
+    font-size: 2rem;
+    padding: .3rem 0 0 0;
+    font-weight: bold;
+}
+
+
+.myCalculator .calcContainer .calcBtns {
+    user-select: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, .5fr);
+    grid-gap: 1rem;
+
+
+}
+
+.myCalculator .calcContainer .calcBtns .calcbtn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    /* border: 1px solid red; */
+    background-color: grey;
+    cursor: pointer;
+
+    border-radius: .3rem;
+    text-align: center;
+    line-height: 3rem;
+    transition: transform .01s ease-in-out;
+    box-shadow: 0px 7px 20px 10px rgba(7, 3, 48, .08);
+}
+.myCalculator .calcContainer .calcBtns .calcbtn1 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    /* border: 1px solid red; */
+    background-color: rgb(47, 244, 47);
+    cursor: pointer;
+    color: black;
+    
+    border-radius: .3rem;
+    
+    transition: transform .01s ease-in-out;
+    box-shadow: 0px 7px 20px 10px rgba(7, 3, 48, .08);
+}
+.myCalculator .calcContainer .calcBtns .calcbtn:hover {
+    transform: scale(1.03);
+
+}
+
+#btnEqul{
+    background-color: #ff0029;
+    font-size: 40px;
+}
+#btnAns{
+    grid-column-start:3 ;
+    grid-column-end: 5;
+}
