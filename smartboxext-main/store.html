@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Google Search</title>
+  <style>
+    body {
+      background-color: black;
+    }
+
+    #search-form {
+      display: flex;
+      margin-top: 50px;
+    }
+
+    #search-box {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid darkgray;
+      width: 500px;
+      max-width: 100%;
+    }
+    button {
+      border: 2px solid yellow;
+    }
+
+    #search-button {
+      background-color: rgb(98, 96, 96);
+      color: yellow;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      margin-left: 10px;
+      cursor: pointer;
+      margin-left: 40%;
+      margin-right: 50%;
+    }
+
+    #search-button:hover{
+      color:white;
+      font-size: 16px;
+      background-color: rgb(244, 244, 151);
+    }
+    
+    input {
+      background-color: rgb(82, 85, 88);
+      color: white;
+    }
+    input::placeholder {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="search-form">
+    <form action="https://amazon.in/s" method="GET" target="_blank">
+      <input type="text" name="k" id="search-box" placeholder="Search Amazon">
+      <button type="submit" id="search-button">Search</button>
+      </form>
+      </div>
+      <div id="search-form">
+    <form action="https://flipkart.com/search" method="GET" target="_blank">
+      <input type="text" name="q" id="search-box" placeholder="Search Flipkart">
+      <button type="submit" id="search-button">Search</button>
+      </form>
+      </div>
+      <div id="search-form">
+    <form action="https://www.ajio.com/search/" method="GET" target="_blank">
+      <input type="text" name="text" id="search-box" placeholder="Search Ajio">
+      <button type="submit" id="search-button">Search</button>
+    </form>
+    </div>
+</body>
+
+</html>

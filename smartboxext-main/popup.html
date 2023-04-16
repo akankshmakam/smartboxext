@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartBox Extension</title>
+  <style>
+    body {
+      background-color: #222;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      color: #fff;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .container {
+      width: 160px;
+      height: 180px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .button {
+      background-color: #111;
+      color: #fff;
+      border: 1px solid yellow;
+      border-radius: 5px;
+      padding: 15px;
+      font-size: 16px;
+      text-align: center;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #333;
+    }
+
+    .cal a, .ttt a, .gs a, .url a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .cal a:hover, .ttt a:hover, .gs a:hover, .url a:hover {
+      color: #ffd700;
+    }
+
+    .cal {
+      animation: fadeIn 0.5s ease;
+      animation-fill-mode: both;
+      animation-delay: 0s;
+    }
+
+    .ttt {
+      animation: fadeIn 0.5s ease;
+      animation-fill-mode: both;
+      animation-delay: 0.2s;
+    }
+
+    .gs {
+      animation: fadeIn 0.5s ease;
+      animation-fill-mode: both;
+      animation-delay: 0.4s;
+    }
+
+    .url {
+      animation: fadeIn 0.5s ease;
+      animation-fill-mode: both;
+      animation-delay: 0.6s;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    u {
+      color: yellow;
+      padding: 3px;
+    }
+  </style>
+</head>
+
+<body>
+  <u><h1>SmartBox Extension</h1></u>
+  <div class="container">
+    <div class="cal">
+      <button class="button"><a href="calci.html">Calculator</a></button>
+    </div>
+    <div class="ttt">
+      <button class="button"><a href="tictactoe.html">TicTacToe</a></button>
+    </div>
+    <div class="gs">
+      <button class="button"><a href="search.html">Search Web</a></button>
+    </div>
+    <div class="gs">
+      <button class="button"><a href="store.html">Store</a></button>
+    </div>
+  </div>
+</body>
+
+</html>

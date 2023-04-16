@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google Search</title>
+  <style>
+    #search-form {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+    #search-box {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      width: 500px;
+      max-width: 100%;
+    }
+    #search-button {
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    #search-button:hover{
+      background-color: #ccc;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <div id="search-form">
+    <form action="https://www.google.com/search" method="GET" target="_blank">
+      <input type="text" name="q" id="search-box" placeholder="Search Google">
+      <button type="submit" id="search-button">Search</button>
+    </form>
+  </div>
+</body>
+</html>
